@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Segitiga"
+        android:textColor="@color/black"
+        android:textSize="12pt" />
+
+
+    <TextView
+        android:id="@+id/txtAlas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Alas :"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/alas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAlas"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Masukkan Alas"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtTinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alas"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Tinggi :"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTinggi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Masukkan Tinggi"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/txtSisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tinggi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Sisi :"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/sisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSisi"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Masukkan Sisi"
+        android:inputType="number"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sisi"
+        android:id="@+id/hasil"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Hitung"/>
+
+    <TextView
+        android:id="@+id/txtLuas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hasil"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Luas : "
+        android:textColor="@color/black"
+        android:textSize="19dp"/>
+
+    <TextView
+        android:id="@+id/resultLuas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hasil"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/txtLuas"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textKeliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLuas"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Keliling : "
+        android:textColor="@color/black"
+        android:textSize="19dp"/>
+
+    <TextView
+        android:id="@+id/resultKeliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLuas"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/textKeliling"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+
+
+
+
+</RelativeLayout>
